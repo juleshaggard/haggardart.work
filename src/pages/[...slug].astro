@@ -1,0 +1,15 @@
+---
+import { getPageHtml, getProjectPageSlugs } from "../lib/pages.mjs";
+
+export function getStaticPaths() {
+  return getProjectPageSlugs().map((slug) => ({
+    params: { slug },
+    props: { slug },
+  }));
+}
+
+const { slug } = Astro.props;
+const html = getPageHtml(slug);
+---
+
+<Fragment set:html={html} />

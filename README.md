@@ -1,5 +1,15 @@
 # Jules Haggard Art Work
 
-Static GitHub Pages mirror of the Jules Haggard art portfolio.
+Astro-powered static mirror of the Jules Haggard art portfolio.
 
-Generated from the public Webflow site for preview hosting at https://juleshaggard.github.io/haggardart.work/.
+Generated from the public Webflow site and deployed to GitHub Pages at https://haggardart.work/.
+
+## Commands
+
+```sh
+npm install
+npm run dev
+npm run build
+```
+
+The mirrored HTML pages live in `src/content/pages/`, while downloaded static assets live in `public/assets/`.

@@ -1,0 +1,7 @@
+---
+import { getPageHtml } from "../lib/pages.mjs";
+
+const html = getPageHtml("index");
+---
+
+<Fragment set:html={html} />
