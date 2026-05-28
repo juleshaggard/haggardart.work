@@ -1,0 +1,66 @@
+.hm-headline {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  text-rendering: geometricPrecision;
+}
+
+.hm-fill-layer {
+  position: relative;
+  z-index: 2;
+}
+
+.hm-stroke-layer {
+  box-sizing: border-box;
+  color: currentColor;
+  display: block;
+  font: inherit;
+  height: 100%;
+  inset: 0;
+  letter-spacing: inherit;
+  line-height: inherit;
+  opacity: 0;
+  padding: inherit;
+  pointer-events: none;
+  position: absolute;
+  text-align: inherit;
+  text-transform: inherit;
+  width: 100%;
+  z-index: 3;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: max(1px, .035em) currentColor;
+  text-shadow: 0 0 .08em currentColor;
+}
+
+.hm-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.hm-space {
+  display: inline-block;
+  white-space: pre;
+}
+
+.hm-fill-char,
+.hm-stroke-char {
+  display: inline-block;
+  transform-origin: 50% 65%;
+  will-change: transform, opacity, filter, clip-path;
+}
+
+.hm-stroke-char {
+  clip-path: inset(0 101% 0 0);
+}
+
+.projectlink .hm-stroke-layer {
+  padding: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hm-fill-char,
+  .hm-stroke-char {
+    transition: none;
+    will-change: auto;
+  }
+}
