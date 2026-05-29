@@ -1,0 +1,38 @@
+.hm-motion-soft,
+.hm-motion-media,
+.hm-motion-frame {
+  will-change: transform, opacity, filter;
+}
+
+.hm-motion-media {
+  transform-origin: 50% 55%;
+  will-change: transform, opacity, filter, clip-path;
+}
+
+.hm-motion-frame {
+  transform-origin: 50% 50%;
+}
+
+.project > a:first-child,
+.project .link-block-2,
+.project .link-block-3,
+.project .link-block-4,
+.project .link-block-5,
+.projectimgdata {
+  overflow: clip;
+}
+
+.hm-project-active .thumbnail,
+.hm-project-active .videothumbnail,
+.hm-project-active .longvideo {
+  transform-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hm-motion-soft,
+  .hm-motion-media,
+  .hm-motion-frame {
+    transition: none;
+    will-change: auto;
+  }
+}

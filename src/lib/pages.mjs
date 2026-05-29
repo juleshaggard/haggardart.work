@@ -17,10 +17,13 @@ function injectHeadlineMotion(html, slug) {
   const assetPrefix = slug === "index" ? "" : "../";
   const headAssets = [
     `<link href="${assetPrefix}assets/headline-motion/headline-motion.css" rel="stylesheet" type="text/css"/>`,
+    `<link href="${assetPrefix}assets/headline-motion/site-motion.css" rel="stylesheet" type="text/css"/>`,
   ].join("");
   const bodyAssets = [
     `<script defer src="${assetPrefix}assets/headline-motion/gsap.min.js"></script>`,
+    `<script defer src="${assetPrefix}assets/headline-motion/scrolltrigger.min.js"></script>`,
     `<script defer src="${assetPrefix}assets/headline-motion/headline-motion.js"></script>`,
+    `<script defer src="${assetPrefix}assets/headline-motion/site-motion.js"></script>`,
   ].join("");
 
   return html
