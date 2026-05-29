@@ -61,8 +61,7 @@
         autoAlpha: 0,
         clipPath: "inset(0 0 18% 0)",
         filter: "blur(18px)",
-        scale: 1.035,
-        y: 34,
+        scale: 1.08,
       }, {
         autoAlpha: 1,
         clearProps: "visibility",
@@ -76,7 +75,6 @@
           start: "top 88%",
           once: true,
         } : undefined,
-        y: 0,
       });
     });
   };
